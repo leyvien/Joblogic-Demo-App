@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.joblogic.presentation.screen.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_callListingFragment"
+            app:destination="@id/callListingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_buyListingFragment"
+            app:destination="@id/buyListingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sellListingFragment"
+            app:destination="@id/sellListingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/callListingFragment"
+        android:name="com.joblogic.presentation.screen.calllisting.CallListingFragment"
+        android:label="fragment_call_listing"
+        tools:layout="@layout/fragment_call_listing" />
+
+    <fragment
+        android:id="@+id/buyListingFragment"
+        android:name="com.joblogic.presentation.screen.buylisting.BuyListingFragment"
+        android:label="fragment_buy_listing"
+        tools:layout="@layout/fragment_buy_listing" />
+
+    <fragment
+        android:id="@+id/sellListingFragment"
+        android:name="com.joblogic.presentation.screen.selllisting.SellListingFragment"
+        android:label="fragment_sell_listing"
+        tools:layout="@layout/fragment_sell_listing" />
+</navigation>

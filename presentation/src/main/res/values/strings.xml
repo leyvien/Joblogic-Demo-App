@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">presentation</string>
+    <string name="call_list">Call List</string>
+    <string name="buy_list">Buy List</string>
+    <string name="sell_list">Sell List</string>
+    <string name="item_name">Name: %s</string>
+    <string name="item_price">Price: %s</string>
+    <string name="item_quantity">Quantity: %s</string>
+    <string name="person_name">Name: %s</string>
+    <string name="person_number">Number: %s</string>
+</resources>
